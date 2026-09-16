@@ -1,20 +1,21 @@
 # WallCamera
 
-WallCamera is an AutoHotkey v2 application designed to automatically
-open, arrange and refresh multiple Windows Explorer windows used for
-CCTV image monitoring. Is a sister of CameraWall, it open specific folder, if exisist, to look in the past some occured event.
+WallCamera is an AutoHotkey v2 application designed to open and arrange
+multiple Windows Explorer windows used for historical CCTV image monitoring. WallCamera is a sister application of CameraWall. It opens specific
+camera folders for a selected past date, allowing previous events to
+be reviewed.
 
 
 It was developed for a surveillance system where cameras continuously
 upload JPG images to folders through FTP. When WallCamera starts, an input box appears showing yesterday's date by default, though you can enter a different date. Once confirmed, all windows available for that date will open at the location specified in the `config.ini` file and be positioned according to the previously saved layout. Pressing the F10 key closes all open windows and exits the program.
 
-WallCamera automatically:
+WallCamera:
 
-- Opens the configured camera folders.
+- Opens the configured camera folders for the selected date.
 - Finds the most recent JPG image.
 - Arranges Explorer windows according to a saved layout.
 - Uses Extra Large Icons for camera folders.
-- Opens folders automatically.
+- Opens available folders automatically.
 - Restores the saved window layout.
 - Supports local and network paths.
 
@@ -26,14 +27,14 @@ WallCamera automatically:
 
 Each camera can be configured independently in `Config.ini`.
 
-WallCamera builds the path for the current date automatically.
+WallCamera builds the path using the selected target date.
+Yesterday's date is proposed by default, but a different date can be entered.
 
 Example:
 
     C:\CameraData\CAMERA_1\2026-08-10\01\pic
 
-The date folder is generated automatically using the current date.
-
+The date folder is generated using the selected target date.
 ### Extra Large Icons
 
 WallCamera explicitly sets Windows Explorer to Extra Large Icons.
@@ -155,14 +156,13 @@ WallCamera writes operational information to:
 
     WallCamera.log
 
-The log can be useful for troubleshooting camera availability,
-Explorer windows and refresh operations.
+The log can be useful for troubleshooting camera availability
+and Explorer windows.
 
 ---
 ### Exit program
 
-Pressing F10 program close all previous opened folder by WallCamera en exit program
-
+Pressing F10 closes all Explorer windows opened by WallCamera and exits the program.
 ---
 
 ## Troubleshooting
@@ -171,18 +171,15 @@ If a camera folder is not available when WallCamera starts, the camera
 is skipped.
 
 
-If troubleshooting is required, additional diagnostic logging can be
-temporarily enabled in `Refresh.ahk`.
-
 ---
 
 ## Version
 
 Current release:
 
-**WallCamera 1.0.0**
+**WallCamera 1.0.2**
 
-This is the first stable release.
+This release adds the `Config.ini.example` file for easier initial configuration.
 
 ---
 

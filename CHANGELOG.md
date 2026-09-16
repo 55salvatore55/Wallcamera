@@ -1,4 +1,6 @@
 # Changelog
+## [1.0.2] - 2026-09-16
+- Added Config.ini.example for easier initial configuration.
 
 ## [1.0.1] - 2026-08-26
 
