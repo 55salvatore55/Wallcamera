@@ -1,0 +1,50 @@
+[GENERAL]
+CameraCount=8
+
+[CAMERA1]
+Enabled=1
+Name=Camera 1
+BasePath=C:\CameraData\CAMERA_1
+SubFolder=01\pic
+
+[CAMERA2]
+Enabled=1
+Name=Camera 2
+BasePath=C:\CameraData\CAMERA_2
+SubFolder=01\pic
+
+[CAMERA3]
+Enabled=1
+Name=Camera 3
+BasePath=C:\CameraData\CAMERA_3
+SubFolder=01\pic
+
+[CAMERA4]
+Enabled=1
+Name=Camera 4
+BasePath=C:\CameraData\CAMERA_4
+SubFolder=01\pic
+
+[CAMERA5]
+Enabled=1
+Name=Camera 5
+BasePath=C:\CameraData\CAMERA_5
+SubFolder=01\pic
+
+[CAMERA6]
+Enabled=1
+Name=Camera 6
+BasePath=C:\CameraData\CAMERA_6
+SubFolder=01\pic
+
+[CAMERA7]
+Enabled=1
+Name=Camera 7
+BasePath=C:\CameraData\CAMERA_7
+SubFolder=01\pic
+
+[CAMERA8]
+Enabled=1
+Name=Camera 8
+BasePath=C:\CameraData\CAMERA_8
+SubFolder=01\pic
